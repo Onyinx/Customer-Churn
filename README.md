@@ -87,12 +87,14 @@ Average spend, churned vs retained	about $253 vs $250 per transaction (churned c
 ---
 7. Dashboard and Visuals
 The Power BI dashboard has two pages. Page 1 gives the overview and the recommendation; page 2 goes into detail by segment. Navigation buttons (NEXT PAGE / BACK) move between them.
+
 Page 1: Overview and Recommendation
 ![Customer Churn dashboard, page 1](images/dashboard_page1.png)
 Headline cards: average amount spent ($250.71), total amount spent ($1.27M) and total customers (1,000).
 Slicers: Frequency Risk, Age Group, Income Level and Churn status. Every visual on the page responds to them.
 Churn breakdowns: amount spent per season (split by churn), and churn by income level, gender, frequency risk, age group, product category, resolution status and interaction type.
 Retention Recommendation box: a plain-language summary of the finding. Low-engagement customers churn at 35.1%, service resolution and spend were ruled out, and the bank should target the 97 customers in the high-risk segment.
+
 Page 2: Segment Detail
 ![Customer Churn dashboard, page 2](images/dashboard_page2.png)
 Customer table: each customer's resolution status, service usage and churn status.
