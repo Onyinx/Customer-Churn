@@ -85,6 +85,19 @@ Age groups	19.5%–20.7% (flat, so not a driver)
 Resolved vs unresolved service cases	20.5% vs 20.7% (no real difference)
 Average spend, churned vs retained	about $253 vs $250 per transaction (churned customers spend slightly more\)
 ---
+Logistic regression
+
+To check which factors affect churn once they are considered together, I fitted a logistic regression using login activity, spending, service contacts and demographics (age, gender, marital status, income).
+
+Finding	Result
+Only significant factor	Low login activity (5 logins or fewer): about 2.5 times the odds of churning (p < 0.001)
+Not significant	Age, gender, marital status, income level, number of transactions, average spend, service contacts, unresolved issues
+Predictive power	Weak: cross-validated ROC-AUC about 0.53 (0.50 means guessing)
+
+What this means: the model confirms that login frequency is the one behaviour worth monitoring. Churn is not explained well by the other variables in this dataset, so the model is useful for explaining churn drivers, not for scoring individual customers. Better prediction would need more data, such as product usage, contract details or complaint history.
+
+Tools: Python (pandas, statsmodels, scikit-learn).
+
 7. Dashboard and Visuals
 The Power BI dashboard has two pages. Page 1 gives the overview and the recommendation; page 2 goes into detail by segment. Navigation buttons (NEXT PAGE / BACK) move between them.
 Page 1: Overview and Recommendation
