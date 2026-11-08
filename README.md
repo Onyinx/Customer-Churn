@@ -21,7 +21,7 @@ Table	Rows	What it contains
 `Online_Activity`	1,000	Login frequency and a login-frequency risk band (LOW / MEDIUM / HIGH)
 `Customer_Service`	1,002	Interaction type (complaint, feedback, inquiry) and resolution status
 `Transaction_History`	5,054	Amount spent and product category (books, clothing, electronics, furniture, groceries)
-Source: [add where the dataset came from, e.g. the training provider or platform]
+Source: This dataset was provided during my internship, "C:\Users\HP\Downloads\International_Education_Costs_F .xlsx".
 Formats used: the four tables as CSV files, and as one Excel workbook (`Customer_Churn_Dataset.xlsx`, one sheet per table).
 Target variable: `Churn status` (`YES` = customer left, `NO` = customer stayed).
 ---
